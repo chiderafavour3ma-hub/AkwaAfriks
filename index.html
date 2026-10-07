@@ -1,0 +1,2487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0c090a">
+<meta name="description" content="Akwaafriks — the Lagos fashion house of Angle Nwabueze. Elegance, experienced. Experience is everything.">
+<title>Akwaafriks — Elegance, Experienced.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%233c121c'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='16' fill='%23f3eee6'%3EA%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --black: #0c090a;
+  --black-soft: #161012;
+  --ink: #1c1614;
+  --burgundy: #6e2433;
+  --burgundy-deep: #3c121c;
+  --burgundy-rich: #541824;
+  --wine: #431520;
+  --ivory: #f3eee6;
+  --ivory-2: #e8e1d6;
+  --paper: #f6f1ea;
+  --paper-2: #efe8de;
+  --gold: #b08d5b;
+  --gold-bright: #d4c4a8;
+  --gold-deep: #8a6840;
+  --muted: #5e554f;
+  --line: rgba(176, 141, 91, 0.45);
+  --line-dark: rgba(28, 22, 20, 0.14);
+  --pad: clamp(18px, 4vw, 72px);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --curtain: cubic-bezier(0.76, 0, 0.24, 1);
+  --header: 74px;
+  --founder: url("https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec");
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--black); }
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--ink);
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+img { max-width: 100%; display: block; }
+button, input, textarea { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--burgundy); color: var(--ivory); }
+:focus-visible { outline: 1px solid var(--gold); outline-offset: 3px; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: #5a2430; }
+.sr {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+.skip {
+  position: absolute; left: 12px; top: -48px; z-index: 700;
+  background: var(--gold); color: var(--black); padding: 10px 14px;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+}
+.skip:focus { top: 12px; }
+
+/* progress */
+.progress {
+  position: fixed; top: 0; left: 0; height: 1px; width: 0;
+  background: var(--gold); z-index: 420; pointer-events: none;
+}
+
+/* header */
+.header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 210;
+  height: var(--header);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 var(--pad);
+  color: var(--ivory);
+  transition: background 0.45s var(--ease), color 0.45s var(--ease), border-color 0.45s;
+  border-bottom: 1px solid transparent;
+}
+.header.scrolled {
+  background: rgba(12, 9, 10, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom-color: rgba(176, 141, 91, 0.22);
+}
+body.menu-open .header {
+  background: var(--ivory);
+  color: var(--ink);
+  border-bottom-color: rgba(28, 22, 20, 0.08);
+  backdrop-filter: none;
+}
+.wordmark {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.header-section {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--gold-bright); opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.header.scrolled .header-section { opacity: 1; }
+body.menu-open .header-section { opacity: 0; }
+.nav-actions { display: flex; align-items: center; gap: 8px; }
+.nav-btn {
+  min-height: 44px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: inherit;
+}
+.nav-btn .count {
+  min-width: 18px; height: 18px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--gold);
+  color: var(--gold-bright);
+  font-size: 10px; letter-spacing: 0;
+  padding: 0 4px;
+}
+body.menu-open .nav-btn .count { color: var(--ink); border-color: var(--ink); }
+.nav-btn .count.has { background: var(--gold); color: var(--black); border-color: var(--gold); }
+
+/* menu */
+.menu {
+  position: fixed; inset: 0; z-index: 200;
+  background: var(--ivory);
+  color: var(--ink);
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  padding-top: var(--header);
+  clip-path: inset(0 0 100% 0);
+  visibility: hidden;
+  pointer-events: none;
+  transition: clip-path 0.9s var(--curtain), visibility 0s linear 0.9s;
+}
+.menu.open {
+  clip-path: inset(0 0 0 0);
+  visibility: visible;
+  pointer-events: auto;
+  transition: clip-path 0.9s var(--curtain), visibility 0s;
+}
+.menu-nav {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 4vh var(--pad) 6vh;
+  position: relative;
+  z-index: 1;
+}
+.menu-link {
+  display: flex; align-items: baseline; gap: 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(34px, 4.4vw, 62px);
+  line-height: 1.08;
+  color: var(--ink);
+  padding: 4px 0;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease), color 0.35s, font-style 0.35s;
+}
+.menu.open .menu-link { opacity: 1; transform: none; }
+.menu.open .menu-link:nth-child(1) { transition-delay: 0.18s; }
+.menu.open .menu-link:nth-child(2) { transition-delay: 0.24s; }
+.menu.open .menu-link:nth-child(3) { transition-delay: 0.3s; }
+.menu.open .menu-link:nth-child(4) { transition-delay: 0.36s; }
+.menu.open .menu-link:nth-child(5) { transition-delay: 0.42s; }
+.menu.open .menu-link:nth-child(6) { transition-delay: 0.48s; }
+.menu-link i {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--gold-deep);
+  font-weight: 500;
+  min-width: 22px;
+}
+.menu-link:hover, .menu-link:focus-visible, .menu-link.is-current {
+  font-style: italic;
+  color: var(--burgundy-rich);
+}
+.menu-foot {
+  display: flex; gap: 28px; margin-top: 36px;
+  opacity: 0; transform: translateY(12px);
+  transition: opacity 0.7s var(--ease) 0.5s, transform 0.7s var(--ease) 0.5s;
+}
+.menu.open .menu-foot { opacity: 1; transform: none; }
+.menu-foot a {
+  font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  min-height: 44px;
+  display: inline-flex; align-items: center;
+}
+.menu-foot a:hover { color: var(--ink); border-bottom-color: var(--gold); }
+.menu-visual {
+  position: relative;
+  overflow: hidden;
+  background: var(--burgundy-deep);
+}
+.menu-visual img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center 18%;
+  opacity: 0; transition: opacity 0.7s var(--ease);
+}
+.menu-visual img.is-on { opacity: 1; }
+.menu-visual figcaption {
+  position: absolute; left: 28px; bottom: 28px; z-index: 2;
+  color: var(--ivory);
+  font-size: 11px; letter-spacing: 0.26em; text-transform: uppercase;
+  text-shadow: 0 1px 12px rgba(0,0,0,0.4);
+}
+
+/* hero */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  background: var(--black);
+  color: var(--ivory);
+  overflow: hidden;
+}
+.hero-media, .hero-media img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+}
+.hero-media img {
+  object-fit: cover;
+  object-position: center 18%;
+  transform: scale(1.08);
+  filter: contrast(1.04) saturate(0.94);
+}
+.ready .hero-media img {
+  animation: settle 16s var(--ease) forwards;
+}
+@keyframes settle {
+  to { transform: scale(1); }
+}
+.hero-grade {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: #5a1a28;
+  mix-blend-mode: multiply;
+  opacity: 0.32;
+}
+.hero-shade {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background:
+    linear-gradient(to top, rgba(8,5,6,0.9) 0%, rgba(8,5,6,0.5) 24%, rgba(8,5,6,0.08) 48%, transparent 64%),
+    linear-gradient(to bottom, rgba(8,5,6,0.66) 0%, transparent 18%),
+    linear-gradient(to right, rgba(8,5,6,0.28) 0%, transparent 42%);
+}
+.hero-copy {
+  position: absolute; z-index: 3;
+  left: var(--pad); bottom: 7vh;
+  max-width: min(1100px, calc(100% - var(--pad) * 2));
+}
+.hero-kicker {
+  margin: 0 0 18px;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  opacity: 0;
+  transition: opacity 1s var(--ease) 0.45s;
+}
+.ready .hero-kicker { opacity: 1; }
+.mask { overflow: hidden; }
+.mask > span {
+  display: block;
+  transform: translateY(108%);
+  transition: transform 1.25s var(--ease);
+}
+.ready .mask > span { transform: none; }
+.ready .hero-sub > span { transition-delay: 0.16s; }
+.hero h1 {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  font-size: clamp(40px, 10.6vw, 156px);
+  line-height: 0.84;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+.hero-sub {
+  margin: 14px 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(22px, 2.5vw, 38px);
+  letter-spacing: -0.02em;
+  color: var(--ivory);
+}
+.scroll-cue {
+  margin-top: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--gold-bright);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 10px;
+  min-height: 44px;
+  opacity: 0;
+  transition: opacity 1s var(--ease) 0.7s, color 0.3s;
+}
+.ready .scroll-cue { opacity: 1; }
+.scroll-cue:hover { color: var(--ivory); }
+.cue-line {
+  width: 52px; height: 1px; background: rgba(212, 196, 168, 0.4);
+  position: relative; overflow: hidden;
+}
+.cue-line::after {
+  content: "";
+  position: absolute; left: -40%; top: 0; width: 40%; height: 100%;
+  background: var(--ivory);
+  animation: dash 2.2s var(--ease) infinite;
+}
+@keyframes dash { to { left: 110%; } }
+
+/* marquee */
+.marquee {
+  background: var(--black);
+  color: var(--gold-bright);
+  border-top: 1px solid rgba(176, 141, 91, 0.28);
+  border-bottom: 1px solid rgba(176, 141, 91, 0.28);
+  overflow: hidden;
+  height: 46px;
+  display: flex; align-items: center;
+}
+.marquee-track {
+  display: flex; width: max-content;
+  animation: mq 52s linear infinite;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee span {
+  font-size: 11px;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-right: 0;
+}
+@keyframes mq { to { transform: translateX(-50%); } }
+
+/* shared */
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 500;
+}
+.dark-section .eyebrow, .philosophy .eyebrow, .experience .eyebrow, .statement .eyebrow {
+  color: var(--gold-bright);
+}
+.js .reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 1.1s var(--ease), transform 1.1s var(--ease);
+}
+.js .reveal.in { opacity: 1; transform: none; }
+.js .reveal.d1 { transition-delay: 0.1s; }
+.js .reveal.d2 { transition-delay: 0.2s; }
+.js .reveal.d3 { transition-delay: 0.3s; }
+
+/* founder */
+.founder {
+  background: var(--paper);
+  color: var(--ink);
+  padding: clamp(88px, 12vw, 150px) var(--pad) clamp(100px, 13vw, 170px);
+}
+.founder-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(36px, 6vw, 110px);
+  align-items: end;
+}
+.founder h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: clamp(48px, 6.2vw, 96px);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+.role {
+  margin: 18px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.founder-bio {
+  max-width: 440px;
+  margin-top: 32px;
+}
+.founder-bio p {
+  margin: 0 0 16px;
+  font-weight: 400;
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: #3a322e;
+}
+.founder-frame {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  max-height: 860px;
+  margin-left: 8%;
+}
+.founder-block {
+  position: absolute;
+  left: -9%;
+  bottom: -7%;
+  width: 48%;
+  height: 38%;
+  background: var(--burgundy-rich);
+  z-index: 0;
+}
+.founder-frame img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% 16%;
+  background: #cbb9a4;
+}
+.founder-cap {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: -28px;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* philosophy */
+.philosophy {
+  background: var(--wine);
+  color: var(--ivory);
+}
+.phil-layout {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  min-height: 100vh;
+}
+.phil-visual { position: relative; min-height: 560px; background: #2a1016; }
+.phil-visual img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center 18%;
+}
+.vlabel {
+  position: absolute; left: 22px; bottom: 28px; z-index: 2;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+}
+.phil-copy {
+  padding: clamp(72px, 9vw, 130px) clamp(28px, 5vw, 84px);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.phil-copy h2 {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  font-size: clamp(58px, 8.2vw, 124px);
+  line-height: 0.82;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+.phil-copy h2 span {
+  display: block;
+  padding-left: 14%;
+}
+.phil-lead {
+  margin: 28px 0 0;
+  max-width: 420px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.35;
+  color: var(--gold-bright);
+}
+.rule {
+  width: 56px; height: 1px; background: var(--gold);
+  margin: 32px 0;
+  border: 0;
+}
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 32px;
+}
+.pillars article:nth-child(2) { margin-top: 48px; }
+.pillars article:nth-child(3) { margin-top: 18px; }
+.pillars span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  color: var(--gold-bright);
+  margin-bottom: 10px;
+}
+.pillars h3 {
+  margin: 0 0 10px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 28px;
+}
+.pillars p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: rgba(243, 238, 230, 0.78);
+  max-width: 26ch;
+}
+
+/* collection */
+.collection {
+  background: var(--paper-2);
+  color: var(--ink);
+  padding: clamp(88px, 11vw, 140px) 0 clamp(48px, 6vw, 80px);
+}
+.sec-head {
+  padding: 0 var(--pad) clamp(28px, 4vw, 48px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+}
+.sec-head h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(42px, 5.4vw, 78px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+.sec-head h2 em { font-style: italic; font-weight: 500; }
+.sec-lead {
+  margin: 0;
+  max-width: 260px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  text-align: right;
+}
+.ed-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.82fr 1fr;
+  grid-template-rows: minmax(380px, 58vh) minmax(200px, 30vh) minmax(420px, 64vh);
+  gap: 14px;
+  padding: 0 14px;
+}
+.look {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  background: #2a161b;
+  min-height: 0;
+}
+.g1 { grid-column: 1; grid-row: 1 / 3; }
+.g2 { grid-column: 2 / 4; grid-row: 1; }
+.g3 { grid-column: 2; grid-row: 2; }
+.g-statement { grid-column: 3; grid-row: 2; }
+.g4 { grid-column: 1 / 3; grid-row: 3; }
+.g5 { grid-column: 3; grid-row: 3; }
+.look img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 1.5s var(--ease);
+}
+.look:hover img { transform: scale(1.06); }
+.look figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
+  padding: 48px 18px 16px;
+  background: linear-gradient(to top, rgba(8,5,6,0.72), transparent);
+  color: var(--ivory);
+  display: flex; justify-content: space-between; align-items: flex-end; gap: 12px;
+  pointer-events: none;
+}
+.look figcaption strong {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: 22px;
+  font-style: italic;
+}
+.look figcaption em {
+  font-style: normal;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+}
+.look-hit {
+  position: absolute; inset: 0; z-index: 3;
+  background: transparent;
+}
+.look::after {
+  content: "";
+  position: absolute; left: 18px; bottom: 52px;
+  width: 0; height: 1px; background: var(--gold);
+  z-index: 2; pointer-events: none;
+  transition: width 0.6s var(--ease);
+}
+.look:hover::after { width: 42px; }
+.g-statement {
+  background: var(--burgundy-deep);
+  color: var(--ivory);
+  padding: 28px;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  min-height: 0;
+}
+.g-statement p {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(26px, 2.4vw, 36px);
+  line-height: 1.15;
+}
+.g-statement span {
+  display: block;
+  margin-top: 14px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+}
+
+/* experience */
+.experience { background: var(--black); color: var(--ivory); }
+.exp-head {
+  padding: clamp(80px, 10vw, 120px) var(--pad) 28px;
+  display: flex; justify-content: space-between; align-items: flex-end; gap: 24px;
+}
+.exp-head h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(42px, 5.5vw, 80px);
+  line-height: 0.95;
+}
+.exp-note {
+  margin: 0;
+  max-width: 280px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(243, 238, 230, 0.72);
+}
+.exp-stage {
+  position: relative;
+  height: min(84vh, 880px);
+  background: #1a1012;
+  overflow: hidden;
+}
+.exp-slide {
+  position: absolute; inset: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 1.35s ease;
+  pointer-events: none;
+}
+.exp-slide.is-on { opacity: 1; z-index: 1; pointer-events: auto; }
+.exp-slide img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  transform: scale(1.06);
+}
+.exp-slide.is-on img { animation: breathe 16s ease-in-out alternate infinite; }
+@keyframes breathe {
+  from { transform: scale(1.05) translate3d(0,0,0); }
+  to { transform: scale(1.12) translate3d(-1.5%, -1%, 0); }
+}
+.exp-slide::after {
+  content: "";
+  position: absolute; inset: auto 0 0 0; height: 52%;
+  background: linear-gradient(to top, rgba(8,5,6,0.82), transparent);
+  pointer-events: none;
+}
+.exp-slide figcaption {
+  position: absolute; z-index: 2;
+  left: var(--pad); bottom: 88px;
+  max-width: min(520px, calc(100% - 180px));
+}
+.exp-slide figcaption span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin-bottom: 8px;
+}
+.exp-slide figcaption strong {
+  display: block;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: clamp(28px, 3.4vw, 46px);
+  line-height: 1.05;
+}
+.exp-slide figcaption em {
+  display: block;
+  margin-top: 8px;
+  font-style: normal;
+  font-size: 14px;
+  color: rgba(243, 238, 230, 0.8);
+}
+.exp-controls {
+  position: absolute; z-index: 3;
+  right: var(--pad); bottom: 28px;
+  display: flex; align-items: center; gap: 16px;
+  color: var(--ivory);
+}
+.exp-controls button {
+  min-height: 44px;
+  padding: 0 4px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ivory);
+}
+.exp-controls button:hover { color: var(--gold-bright); }
+.exp-progress {
+  width: min(28vw, 220px);
+  height: 1px;
+  background: rgba(243, 238, 230, 0.28);
+  position: relative;
+}
+.exp-progress span {
+  display: block; height: 100%; width: 0; background: var(--gold);
+}
+.exp-progress span.run { animation: fill 6.8s linear forwards; }
+.exp-progress span.paused { animation-play-state: paused; }
+@keyframes fill { to { width: 100%; } }
+.exp-count {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--gold-bright);
+  min-width: 52px;
+}
+.film {
+  overflow: hidden;
+  padding: 22px 0 56px;
+  border-top: 1px solid rgba(176, 141, 91, 0.2);
+}
+.film-track {
+  display: flex; gap: 12px; width: max-content;
+  animation: film 90s linear infinite;
+  padding-left: 12px;
+}
+.film:hover .film-track, .film:focus-within .film-track { animation-play-state: paused; }
+@keyframes film { to { transform: translateX(-50%); } }
+.frame {
+  width: 210px;
+  flex: 0 0 auto;
+  text-align: left;
+  color: var(--ivory);
+}
+.frame-img {
+  display: block; width: 210px; height: 280px; overflow: hidden; background: #2a161b;
+}
+.frame img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 18%;
+  transition: transform 1.1s var(--ease);
+}
+.frame:hover img { transform: scale(1.05); }
+.frame-name {
+  display: block;
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+}
+.frame.is-active .frame-name { color: var(--ivory); }
+
+/* pieces */
+.pieces {
+  background: var(--paper);
+  color: var(--ink);
+  padding: clamp(88px, 11vw, 140px) var(--pad) clamp(40px, 6vw, 80px);
+}
+.pieces-intro { max-width: 640px; margin-bottom: 12px; }
+.pieces-intro h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(42px, 5.4vw, 76px);
+  line-height: 0.95;
+}
+.pieces-intro p.lede {
+  margin: 18px 0 0;
+  max-width: 420px;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+.piece {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 5vw, 88px);
+  align-items: center;
+  padding: clamp(48px, 7vw, 96px) 0;
+  border-top: 1px solid var(--line-dark);
+}
+.piece:last-of-type { border-bottom: 1px solid var(--line-dark); }
+.piece:nth-child(even) .piece-copy { order: 2; }
+.piece-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #d9cfc3;
+}
+.piece-media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 1.5s var(--ease);
+}
+.piece:hover .piece-media img { transform: scale(1.045); }
+.piece-open {
+  position: absolute; inset: 0;
+  background: transparent;
+}
+.view-tag {
+  position: absolute; left: 16px; bottom: 16px; z-index: 2;
+  font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--ivory);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.4s, transform 0.4s;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+}
+.piece:hover .view-tag { opacity: 1; transform: none; }
+.idx {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: var(--gold-deep);
+  margin-bottom: 12px;
+}
+.piece h3 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: clamp(32px, 3.4vw, 48px);
+  line-height: 1;
+}
+.piece .desc {
+  margin: 16px 0 0;
+  max-width: 380px;
+  color: #3f3733;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+.piece-meta {
+  display: flex; align-items: center; gap: 22px;
+  margin-top: 26px; flex-wrap: wrap;
+}
+.price {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  font-size: 15px;
+}
+.price small {
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  font-size: 10px;
+  color: var(--muted);
+  margin-left: 6px;
+}
+.held-flag {
+  display: none;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+.piece.is-held .held-flag { display: inline; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid currentColor;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transition: background 0.45s var(--ease), color 0.45s var(--ease), border-color 0.45s, opacity 0.3s;
+}
+.btn:hover { background: var(--ink); color: var(--ivory); border-color: var(--ink); }
+.btn.gold:hover { background: var(--gold); border-color: var(--gold); color: var(--black); }
+.btn:disabled, .btn[aria-disabled="true"] { opacity: 0.38; pointer-events: none; }
+.btn:active { transform: translateY(1px); }
+.btn.light {
+  color: var(--ivory);
+  border-color: rgba(243, 238, 230, 0.55);
+}
+.btn.light:hover { background: var(--ivory); color: var(--ink); border-color: var(--ivory); }
+.atelier-note {
+  margin: 28px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* statement */
+.statement {
+  min-height: 100vh;
+  min-height: 100svh;
+  background: #16090d;
+  color: var(--ivory);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(120px, 18vw);
+  position: relative;
+}
+.statement-copy {
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: clamp(80px, 12vh, 140px) clamp(24px, 5vw, 80px);
+}
+.statement h2 {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  font-size: clamp(52px, 8.6vw, 148px);
+  line-height: 0.82;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+.statement h2 em {
+  display: block;
+  margin-top: 0.08em;
+  padding-left: 8vw;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.58em;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  color: var(--gold-bright);
+}
+.statement-slit {
+  position: relative;
+  overflow: hidden;
+  background: #2a1218;
+  border-left: 1px solid rgba(176, 141, 91, 0.45);
+}
+.statement-slit img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 64% 16%;
+}
+
+/* contact */
+.contact {
+  background: var(--ivory);
+  color: var(--ink);
+  padding: clamp(88px, 11vw, 140px) var(--pad) clamp(72px, 8vw, 110px);
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(36px, 6vw, 100px);
+  align-items: start;
+}
+.contact h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(44px, 5.6vw, 84px);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+.contact h2 em { font-style: italic; }
+.where {
+  margin: 22px 0 0;
+  color: var(--muted);
+  max-width: 280px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.contact-row {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid var(--line-dark);
+  min-height: 64px;
+  transition: padding 0.45s var(--ease), color 0.35s;
+}
+.contact-rows a:last-of-type, .contact-row:last-child { border-bottom: 1px solid var(--line-dark); }
+.contact-row:hover { padding-left: 10px; color: var(--burgundy-rich); }
+.cr-label {
+  font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-deep);
+}
+.cr-value { font-family: "Playfair Display", Georgia, serif; font-size: 22px; }
+.cr-arrow { transition: transform 0.4s var(--ease); }
+.contact-row:hover .cr-arrow { transform: translateX(6px); }
+.note-form { margin-top: 42px; }
+.note-form h3 {
+  margin: 0 0 8px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 28px;
+}
+.form-kicker {
+  margin: 0 0 22px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.field { margin-bottom: 18px; }
+.field label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.field input, .field textarea {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(28, 22, 20, 0.28);
+  border-radius: 0;
+  padding: 10px 0 12px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 20px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.3s;
+}
+.field textarea { resize: vertical; min-height: 96px; line-height: 1.45; }
+.field input:focus, .field textarea:focus { border-bottom-color: var(--gold-deep); }
+.field.error input, .field.error textarea { border-bottom-color: var(--burgundy); }
+.err {
+  display: block;
+  min-height: 1.1em;
+  margin-top: 6px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+.form-success {
+  display: none;
+  padding: 28px 0 8px;
+}
+.form-success.show { display: block; }
+.form-success h3 {
+  margin: 0 0 10px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 36px;
+}
+.form-success p { margin: 0 0 22px; color: var(--muted); max-width: 420px; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+/* footer */
+.footer {
+  background: var(--black);
+  color: var(--ivory);
+  padding: 72px var(--pad) 28px;
+  border-top: 1px solid rgba(176, 141, 91, 0.28);
+}
+.footer-top {
+  display: flex; justify-content: space-between; gap: 40px; align-items: flex-end;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(243, 238, 230, 0.1);
+}
+.mark-row { display: flex; align-items: center; gap: 14px; color: var(--gold-bright); }
+.mark { width: 28px; height: 28px; }
+.footer .brand {
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.footer-line {
+  margin: 12px 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  color: var(--gold-bright);
+  font-size: 20px;
+}
+.footer-links { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.footer-links a, .footer-links button {
+  font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: rgba(243, 238, 230, 0.78);
+  min-height: 36px;
+  display: inline-flex; align-items: center;
+}
+.footer-links a:hover, .footer-links button:hover { color: var(--gold-bright); }
+.footer-bot {
+  display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding-top: 22px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(243, 238, 230, 0.45);
+}
+
+/* overlays */
+.overlay {
+  position: fixed; inset: 0; z-index: 240;
+  background: rgba(8, 5, 6, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.45s var(--ease);
+}
+.overlay.show { opacity: 1; pointer-events: auto; }
+.lightbox, .modal, .privacy {
+  position: fixed; z-index: 260;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.45s var(--ease);
+}
+.lightbox.open, .modal.open, .privacy.open { opacity: 1; pointer-events: auto; }
+.lightbox {
+  inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+}
+.lb-panel {
+  width: min(1080px, 100%);
+  max-height: min(88vh, 820px);
+  background: #140c0e;
+  color: var(--ivory);
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  transform: translateY(16px);
+  transition: transform 0.5s var(--ease);
+  position: relative;
+}
+.lightbox.open .lb-panel { transform: none; }
+.lb-panel img {
+  width: 100%; height: min(88vh, 820px); object-fit: cover; background: #2a161b;
+}
+.lb-copy {
+  padding: 36px 28px;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  position: relative;
+}
+.lb-copy h3 {
+  margin: 8px 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.05;
+}
+.lb-copy p { color: rgba(243,238,230,0.75); line-height: 1.6; }
+.lb-nav { display: flex; gap: 18px; margin-top: 22px; }
+.lb-nav button, .x {
+  min-height: 44px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+}
+.x {
+  position: absolute; top: 12px; right: 14px; z-index: 2;
+  color: var(--ivory);
+  min-width: 44px;
+}
+.lb-panel .x { color: var(--ivory); }
+.modal {
+  inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.modal-panel {
+  width: min(960px, 100%);
+  max-height: min(90vh, 760px);
+  background: var(--ivory);
+  color: var(--ink);
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  overflow: auto;
+  position: relative;
+  transform: translateY(18px);
+  transition: transform 0.5s var(--ease);
+}
+.modal.open .modal-panel { transform: none; }
+.modal-panel img { width: 100%; height: 100%; min-height: 320px; object-fit: cover; background: #d9cfc3; }
+.modal-body { padding: 36px 32px 32px; position: relative; }
+.modal-body h3 {
+  margin: 8px 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(32px, 3vw, 44px);
+}
+.modal-body .price { display: block; margin: 14px 0; }
+.modal-body .detail { margin: 0 0 18px; color: #3f3733; line-height: 1.65; max-width: 42ch; }
+.sizes { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 6px; }
+.sizes button {
+  min-width: 48px; min-height: 44px;
+  border: 1px solid rgba(28,22,20,0.25);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+.sizes button[aria-checked="true"] {
+  background: var(--ink); color: var(--ivory); border-color: var(--ink);
+}
+.size-hint { min-height: 1.2em; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--burgundy); }
+.modal-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.confirm-state { display: none; }
+.confirm-state.show { display: block; }
+.choose-state.hide { display: none; }
+.modal .x, .privacy .x, .list-panel .x { color: var(--ink); }
+.list-panel {
+  position: fixed; top: 0; right: 0; z-index: 270;
+  width: min(440px, 100%);
+  height: 100%;
+  background: var(--ivory);
+  color: var(--ink);
+  transform: translateX(104%);
+  transition: transform 0.7s var(--curtain);
+  display: flex; flex-direction: column;
+  border-left: 1px solid rgba(176, 141, 91, 0.35);
+}
+.list-panel.open { transform: none; }
+.list-head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 22px 22px 16px;
+  border-bottom: 1px solid var(--line-dark);
+}
+.list-head h3 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 28px;
+}
+.list-body { flex: 1; overflow: auto; padding: 8px 22px 22px; }
+.li-row {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line-dark);
+}
+.li-row img { width: 72px; height: 92px; object-fit: cover; background: #d9cfc3; }
+.li-row strong { display: block; font-family: "Playfair Display", Georgia, serif; font-weight: 500; font-size: 18px; }
+.li-row span { font-size: 12px; letter-spacing: 0.08em; color: var(--muted); }
+.li-remove {
+  font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--muted); min-height: 44px; padding: 0 4px;
+}
+.li-remove:hover { color: var(--burgundy); }
+.list-empty { padding: 28px 0; color: var(--muted); }
+.list-empty a { border-bottom: 1px solid var(--gold); }
+.list-foot {
+  padding: 16px 22px 22px;
+  border-top: 1px solid var(--line-dark);
+}
+.list-total {
+  display: flex; justify-content: space-between;
+  font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.list-foot p { margin: 0 0 14px; font-size: 13px; color: var(--muted); }
+.privacy {
+  inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.privacy-panel {
+  width: min(520px, 100%);
+  background: var(--ivory);
+  color: var(--ink);
+  padding: 36px 32px 28px;
+  position: relative;
+}
+.privacy-panel h3 {
+  margin: 0 0 12px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32px;
+}
+.privacy-panel p { margin: 0 0 12px; color: #3f3733; line-height: 1.65; }
+.toast {
+  position: fixed; left: 50%; bottom: 22px; z-index: 300;
+  transform: translate(-50%, 16px);
+  background: var(--ivory);
+  color: var(--ink);
+  border-left: 2px solid var(--gold);
+  padding: 14px 18px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.4s, transform 0.4s var(--ease);
+  max-width: calc(100% - 32px);
+  text-align: center;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+@media (max-width: 980px) {
+  .menu { grid-template-columns: 1fr; }
+  .menu-visual { display: none; }
+  .ed-grid {
+    display: flex; flex-direction: column; gap: 12px; padding: 0 12px;
+  }
+  .look { height: 78vw; min-height: 280px; max-height: 540px; }
+  .g-statement { min-height: 220px; }
+  .phil-layout, .founder-grid, .contact-grid, .statement, .modal-panel, .lb-panel {
+    grid-template-columns: 1fr;
+  }
+  .founder-frame { margin-left: 0; order: -1; max-height: none; }
+  .founder-block { left: -4%; bottom: -4%; }
+  .phil-visual { min-height: 0; height: 72vw; }
+  .pillars { grid-template-columns: 1fr; }
+  .pillars article:nth-child(2), .pillars article:nth-child(3) { margin-top: 0; }
+  .sec-head, .exp-head, .footer-top { flex-direction: column; align-items: flex-start; }
+  .sec-lead, .exp-note { text-align: left; }
+  .piece, .piece:nth-child(even) .piece-copy { display: block; }
+  .piece:nth-child(even) .piece-copy { order: 0; }
+  .piece-media { margin-bottom: 22px; aspect-ratio: 3 / 4; max-height: 70vh; }
+  .statement-slit { min-height: 42vh; border-left: 0; border-top: 1px solid rgba(176,141,91,0.45); }
+  .statement-copy { order: -1; min-height: 58vh; }
+  .statement h2 em { padding-left: 0; }
+  .lb-panel img { height: 46vh; }
+  .modal-panel img { height: 42vh; min-height: 0; }
+  .header-section { display: none; }
+  .exp-slide figcaption { max-width: calc(100% - var(--pad) * 2); bottom: 78px; }
+  .exp-controls { left: var(--pad); right: auto; bottom: 16px; }
+  .exp-progress { width: 28vw; }
+}
+@media (max-width: 520px) {
+  .wordmark { letter-spacing: 0.22em; font-size: 11px; }
+  .nav-btn { letter-spacing: 0.14em; padding: 0 6px; font-size: 10px; }
+  .contact-row { grid-template-columns: 1fr auto; }
+  .cr-label { grid-column: 1 / -1; }
+  .cr-value { font-size: 18px; }
+  .hero h1 { letter-spacing: -0.045em; }
+  .footer-links { align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .preloader { display: none !important; }
+  .mask > span, .hero-kicker, .scroll-cue { transform: none !important; opacity: 1 !important; transition: none !important; }
+  .hero-media img, .exp-slide.is-on img, .marquee-track, .film-track, .cue-line::after { animation: none !important; }
+  .menu, .list-panel, .modal-panel, .lb-panel { transition: none; }
+  .film { overflow-x: auto; }
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<a class="skip" href="#founder">Skip to content</a>
+
+<header class="header" id="header">
+  <a class="wordmark" href="#top">Akwaafriks</a>
+  <span class="header-section" id="headerSection" aria-hidden="true"></span>
+  <div class="nav-actions">
+    <button class="nav-btn" type="button" id="openList" aria-label="Open private list">
+      List <span class="count" id="listCount">0</span>
+    </button>
+    <button class="nav-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu-nav" aria-label="Primary">
+    <a class="menu-link" href="#founder" data-img="founder" data-label="The Founder"><i>01</i>The Founder</a>
+    <a class="menu-link" href="#philosophy" data-img="philosophy" data-label="Philosophy"><i>02</i>Philosophy</a>
+    <a class="menu-link" href="#collection" data-img="collection" data-label="The Collection"><i>03</i>Collection</a>
+    <a class="menu-link" href="#experience" data-img="experience" data-label="The Experience"><i>04</i>Experience</a>
+    <a class="menu-link" href="#pieces" data-img="pieces" data-label="Featured Pieces"><i>05</i>Featured Pieces</a>
+    <a class="menu-link" href="#contact" data-img="contact" data-label="Contact"><i>06</i>Contact</a>
+    <div class="menu-foot">
+      <a href="https://wa.me/2348094412208" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://instagram.com/akwaafriks" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="mailto:atelier@akwaafriks.com">Email</a>
+    </div>
+  </nav>
+  <figure class="menu-visual">
+    <img class="is-on" data-key="founder" src="https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec" alt="">
+    <img data-key="philosophy" src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=1200&q=80" alt="">
+    <img data-key="collection" src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1200&q=80" alt="">
+    <img data-key="experience" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="">
+    <img data-key="pieces" src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1200&q=80" alt="">
+    <img data-key="contact" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" alt="">
+    <figcaption id="menuCaption">The Founder</figcaption>
+  </figure>
+</div>
+
+<main id="top">
+  <section class="hero" id="hero" aria-label="Opening">
+    <div class="hero-media">
+      <img src="https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec" alt="Angle Nwabueze, founder of Akwaafriks, in an ivory drape against a warm studio ground" fetchpriority="high">
+    </div>
+    <div class="hero-grade" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <p class="hero-kicker">Season 01 · Angle Nwabueze</p>
+      <h1 class="mask"><span>Akwaafriks</span></h1>
+      <p class="mask hero-sub"><span>Elegance, Experienced.</span></p>
+      <button class="scroll-cue" type="button" id="scrollCue"><span class="cue-line" aria-hidden="true"></span>Scroll</button>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Akwaafriks — Elegance, Experienced — Lagos — Experience is everything — The house of Angle Nwabueze —&nbsp;</span>
+      <span>Akwaafriks — Elegance, Experienced — Lagos — Experience is everything — The house of Angle Nwabueze —&nbsp;</span>
+    </div>
+  </div>
+
+  <section class="founder" id="founder">
+    <div class="founder-grid">
+      <div>
+        <p class="eyebrow reveal">01 — The Founder</p>
+        <h2 class="reveal d1">Angle Nwabueze</h2>
+        <p class="role reveal d1">Founder &amp; Creative Director</p>
+        <div class="founder-bio reveal d2">
+          <p>Angle Nwabueze is the creative woman behind Akwaafriks. She is devoted to lifestyle, aesthetics, fashion, and a precise kind of elegance — the kind felt after she has left the room.</p>
+          <p>Clothing, for her, is not costume. It is how a woman arrives.</p>
+        </div>
+      </div>
+      <div class="founder-frame reveal d2">
+        <span class="founder-block" aria-hidden="true"></span>
+        <img src="https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec" alt="Portrait of Angle Nwabueze, hand at the chin, in ivory and gold">
+        <span class="founder-cap">Lagos studio</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="philosophy" id="philosophy">
+    <div class="phil-layout">
+      <div class="phil-visual">
+        <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=1400&q=80" alt="A woman in ivory and gold, at rest">
+        <span class="vlabel">Presence, not noise</span>
+      </div>
+      <div class="phil-copy">
+        <p class="eyebrow reveal">02 — Philosophy</p>
+        <h2 class="reveal d1">More Than<br><span>Clothing</span></h2>
+        <p class="phil-lead reveal d2">Not a wardrobe. A way of being seen, and of seeing yourself.</p>
+        <hr class="rule" aria-hidden="true">
+        <div class="pillars">
+          <article class="reveal">
+            <span>01</span>
+            <h3>Elegance</h3>
+            <p>Edited, never loud. The discipline of what is left out.</p>
+          </article>
+          <article class="reveal d1">
+            <span>02</span>
+            <h3>Identity</h3>
+            <p>Worn before it is announced. The shoulder, the drape, the pause.</p>
+          </article>
+          <article class="reveal d2">
+            <span>03</span>
+            <h3>Lifestyle</h3>
+            <p>Lagos mornings. Evenings that linger. What remains when the photograph is over.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="collection" id="collection">
+    <header class="sec-head">
+      <div>
+        <p class="eyebrow reveal">03 — The Collection</p>
+        <h2 class="reveal d1">Atelier <em>studies</em></h2>
+      </div>
+      <p class="sec-lead reveal d2">Six forms. One temperature. Cut in Lagos, worn without hurry.</p>
+    </header>
+    <div class="ed-grid">
+      <figure class="look g1">
+        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1600&q=80" alt="Ivory column dress, full length">
+        <figcaption><strong>Study I — Ivory</strong><em>01</em></figcaption>
+        <button class="look-hit" type="button" data-title="Study I — Ivory" data-copy="A column of light. Cut to move only when she does." aria-label="View Study I, Ivory"></button>
+      </figure>
+      <figure class="look g2">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1800&q=80" alt="Dress in motion, outdoors" style="object-position:center 30%">
+        <figcaption><strong>Study II — Motion</strong><em>02</em></figcaption>
+        <button class="look-hit" type="button" data-title="Study II — Motion" data-copy="Cloth that keeps a little of the walk inside it." aria-label="View Study II, Motion"></button>
+      </figure>
+      <figure class="look g3">
+        <img src="https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?auto=format&fit=crop&w=1200&q=80" alt="Tailored ivory suiting">
+        <figcaption><strong>Study III — Line</strong><em>03</em></figcaption>
+        <button class="look-hit" type="button" data-title="Study III — Line" data-copy="Tailoring with an unhurried shoulder." aria-label="View Study III, Line"></button>
+      </figure>
+      <div class="g-statement">
+        <p>Edited, not expanded.</p>
+        <span>Twelve silhouettes a year</span>
+      </div>
+      <figure class="look g4">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1800&q=80" alt="Woman in white, walking through late light" style="object-position:center 20%">
+        <figcaption><strong>Study IV — Light</strong><em>04</em></figcaption>
+        <button class="look-hit" type="button" data-title="Study IV — Light" data-copy="Late light. An unhurried hour. The cloth agrees." aria-label="View Study IV, Light"></button>
+      </figure>
+      <figure class="look g5">
+        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1400&q=80" alt="Evening gown in deep red">
+        <figcaption><strong>Study V — Evening</strong><em>05</em></figcaption>
+        <button class="look-hit" type="button" data-title="Study V — Evening" data-copy="For the hour when the room lowers its voice." aria-label="View Study V, Evening"></button>
+      </figure>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <div class="exp-head">
+      <div>
+        <p class="eyebrow">04 — The Experience</p>
+        <h2>Worn. Lived.<br>Remembered.</h2>
+      </div>
+      <p class="exp-note">People, not product shots. Slow movement. The cloth, inhabited.</p>
+    </div>
+    <div class="exp-stage" id="expStage" tabindex="0" aria-roledescription="carousel" aria-label="Women wearing Akwaafriks">
+      <figure class="exp-slide is-on">
+        <img src="https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec" alt="Angle Nwabueze wearing ivory">
+        <figcaption>
+          <span>01 — Lagos</span>
+          <strong>Angle, in ivory.</strong>
+          <em>The cloth, first, on her.</em>
+        </figcaption>
+      </figure>
+      <figure class="exp-slide">
+        <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=1800&q=80" alt="Woman in ivory and gold earrings">
+        <figcaption>
+          <span>02 — Gold</span>
+          <strong>Light, kept close.</strong>
+          <em>A study in warmth against the skin.</em>
+        </figcaption>
+      </figure>
+      <figure class="exp-slide">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1800&q=80" alt="Woman walking in white" style="object-position:center 20%">
+        <figcaption>
+          <span>03 — The Column</span>
+          <strong>An unhurried walk.</strong>
+          <em>Lagos light. The dress agrees with it.</em>
+        </figcaption>
+      </figure>
+      <figure class="exp-slide">
+        <img src="https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=1800&q=80" alt="Models on a fashion runway" style="object-position:center 30%">
+        <figcaption>
+          <span>04 — The room</span>
+          <strong>When the cloth enters.</strong>
+          <em>The noise leaves.</em>
+        </figcaption>
+      </figure>
+      <figure class="exp-slide">
+        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1600&q=80" alt="Portrait after the wearing" style="object-position:center 15%">
+        <figcaption>
+          <span>05 — After</span>
+          <strong>What remains.</strong>
+          <em>The feeling, not the photograph.</em>
+        </figcaption>
+      </figure>
+      <div class="exp-controls">
+        <button type="button" id="expPrev">Prev</button>
+        <div class="exp-progress" aria-hidden="true"><span id="expBar"></span></div>
+        <button type="button" id="expNext">Next</button>
+        <button type="button" id="expPause" aria-pressed="false">Pause</button>
+        <span class="exp-count" id="expCount">01 / 05</span>
+      </div>
+    </div>
+    <p class="sr" id="expLive" aria-live="polite"></p>
+    <div class="film" aria-label="Wearing studies">
+      <div class="film-track" id="filmTrack">
+        <button class="frame is-active" type="button" data-exp="0"><span class="frame-img"><img src="https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec" alt=""></span><span class="frame-name">Angle</span></button>
+        <button class="frame" type="button" data-exp="1"><span class="frame-img"><img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=600&q=80" alt=""></span><span class="frame-name">Gold</span></button>
+        <button class="frame" type="button" data-exp="2"><span class="frame-img"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt=""></span><span class="frame-name">Column</span></button>
+        <button class="frame" type="button" data-exp="3"><span class="frame-img"><img src="https://images.unsplash.com/photo-1571513722275-4b41940f54b8?auto=format&fit=crop&w=600&q=80" alt=""></span><span class="frame-name">The room</span></button>
+        <button class="frame" type="button" data-exp="4"><span class="frame-img"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80" alt=""></span><span class="frame-name">After</span></button>
+        <button class="frame" type="button" data-exp="2"><span class="frame-img"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=600&q=80" alt=""></span><span class="frame-name">Motion</span></button>
+        <button class="frame" type="button" data-exp="1"><span class="frame-img"><img src="https://images.unsplash.com/photo-1531384441138-5311b2950cbc?auto=format&fit=crop&w=600&q=80" alt=""></span><span class="frame-name">Warmth</span></button>
+        <button class="frame" type="button" data-exp="0"><span class="frame-img"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80" alt=""></span><span class="frame-name">Pause</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pieces" id="pieces">
+    <div class="pieces-intro">
+      <p class="eyebrow reveal">05 — The Edit</p>
+      <h2 class="reveal d1">Featured Pieces</h2>
+      <p class="lede reveal d2">Four pieces, made to order. Held privately until the atelier confirms.</p>
+    </div>
+
+    <article class="piece" data-id="column">
+      <div class="piece-media">
+        <img src="https://images.unsplash.com/photo-1594633313593-bab3825d0caf?auto=format&fit=crop&w=1400&q=80" alt="The Column, ivory silk">
+        <span class="view-tag">View</span>
+        <button class="piece-open" type="button" data-open="column" aria-label="View The Column"></button>
+      </div>
+      <div class="piece-copy">
+        <span class="idx">01 <span class="held-flag">· Held</span></span>
+        <h3>The Column</h3>
+        <p class="desc">Ivory silk, cut on the column. It does not ask for attention. It receives it.</p>
+        <div class="piece-meta">
+          <span class="price">$680 <small>USD</small></span>
+          <button class="btn" type="button" data-open="column">Reserve</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="piece" data-id="bordeaux">
+      <div class="piece-media">
+        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1400&q=80" alt="Bordeaux Drape, wine silk">
+        <span class="view-tag">View</span>
+        <button class="piece-open" type="button" data-open="bordeaux" aria-label="View Bordeaux Drape"></button>
+      </div>
+      <div class="piece-copy">
+        <span class="idx">02 <span class="held-flag">· Held</span></span>
+        <h3>Bordeaux Drape</h3>
+        <p class="desc">Wine-dark silk. Worn at the shoulder, the waist, or saved until evening.</p>
+        <div class="piece-meta">
+          <span class="price">$520 <small>USD</small></span>
+          <button class="btn" type="button" data-open="bordeaux">Reserve</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="piece" data-id="noir">
+      <div class="piece-media">
+        <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1400&q=80" alt="Noir Atelier, black tailoring" style="object-position:center 15%">
+        <span class="view-tag">View</span>
+        <button class="piece-open" type="button" data-open="noir" aria-label="View Noir Atelier"></button>
+      </div>
+      <div class="piece-copy">
+        <span class="idx">03 <span class="held-flag">· Held</span></span>
+        <h3>Noir Atelier</h3>
+        <p class="desc">Black tailoring with a softened shoulder. Precision, without severity.</p>
+        <div class="piece-meta">
+          <span class="price">$840 <small>USD</small></span>
+          <button class="btn" type="button" data-open="noir">Reserve</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="piece" data-id="gold">
+      <div class="piece-media">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80" alt="Gold Hour evening set" style="object-position:center 20%">
+        <span class="view-tag">View</span>
+        <button class="piece-open" type="button" data-open="gold" aria-label="View Gold Hour"></button>
+      </div>
+      <div class="piece-copy">
+        <span class="idx">04 <span class="held-flag">· Held</span></span>
+        <h3>Gold Hour</h3>
+        <p class="desc">Evening separates. A trace of metal in the weave — never a shout.</p>
+        <div class="piece-meta">
+          <span class="price">$960 <small>USD</small></span>
+          <button class="btn" type="button" data-open="gold">Reserve</button>
+        </div>
+      </div>
+    </article>
+    <p class="atelier-note">Made to order in Lagos · Three weeks · Sizes XS–XL · Private alterations</p>
+  </section>
+
+  <section class="statement" id="statement" aria-label="Brand statement">
+    <div class="statement-copy">
+      <p class="eyebrow reveal">The only brief</p>
+      <h2 class="reveal d1">Experience<em>is everything.</em></h2>
+    </div>
+    <div class="statement-slit">
+      <img src="https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec" alt="">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow reveal">06 — Contact</p>
+        <h2 class="reveal d1">The atelier<br><em>is open.</em></h2>
+        <p class="where reveal d2">Lagos, by appointment. A note is enough. The house replies itself.</p>
+      </div>
+      <div>
+        <div class="contact-rows reveal">
+          <a class="contact-row" href="https://wa.me/2348094412208?text=Hello%20Akwaafriks.%20I%20would%20like%20to%20arrange%20a%20private%20viewing." target="_blank" rel="noopener noreferrer">
+            <span class="cr-label">WhatsApp</span>
+            <span class="cr-value">+234 809 441 2208</span>
+            <span class="cr-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="contact-row" href="https://instagram.com/akwaafriks" target="_blank" rel="noopener noreferrer">
+            <span class="cr-label">Instagram</span>
+            <span class="cr-value">@akwaafriks</span>
+            <span class="cr-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="contact-row" href="https://www.pinterest.com/akwaafriks" target="_blank" rel="noopener noreferrer">
+            <span class="cr-label">Pinterest</span>
+            <span class="cr-value">Akwaafriks</span>
+            <span class="cr-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="contact-row" href="mailto:atelier@akwaafriks.com">
+            <span class="cr-label">Email</span>
+            <span class="cr-value">atelier@akwaafriks.com</span>
+            <span class="cr-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <form class="note-form" id="noteForm" novalidate>
+          <h3>A private note</h3>
+          <p class="form-kicker">Name, a way back, and as few words as you need.</p>
+          <div class="field" data-field="name">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required maxlength="80">
+            <span class="err" id="err-name"></span>
+          </div>
+          <div class="field" data-field="email">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="120">
+            <span class="err" id="err-email"></span>
+          </div>
+          <div class="field" data-field="message">
+            <label for="message">Note</label>
+            <textarea id="message" name="message" required maxlength="600"></textarea>
+            <span class="err" id="err-message"></span>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit" id="sendNote">Send the note</button>
+            <a class="btn" href="https://wa.me/2348094412208?text=Hello%20Akwaafriks.%20I%20would%20like%20a%20private%20viewing." target="_blank" rel="noopener noreferrer">Private viewing</a>
+          </div>
+        </form>
+        <div class="form-success" id="formSuccess" aria-live="polite">
+          <h3>Received.</h3>
+          <p>The atelier will write back. Nothing here is added to a list.</p>
+          <div class="form-actions">
+            <button class="btn" type="button" id="writeAnother">Write another</button>
+            <a class="btn" id="successWa" href="https://wa.me/2348094412208" target="_blank" rel="noopener noreferrer">Continue on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="mark-row">
+        <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M8 34 L20 6 L32 34" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M13.5 24 H26.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        <span style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;">Lagos · Worldwide</span>
+      </div>
+      <p class="brand">Akwaafriks</p>
+      <p class="footer-line">Experience is everything.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#founder">The Founder</a>
+      <a href="#pieces">Featured Pieces</a>
+      <a href="https://wa.me/2348094412208" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://instagram.com/akwaafriks" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <button type="button" id="openPrivacy">Privacy</button>
+      <button type="button" id="toTop">Back to top</button>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <span>© <span id="year">2026</span> Akwaafriks. All rights reserved.</span>
+    <span>Founded by Angle Nwabueze</span>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle" hidden>
+  <div class="lb-panel">
+    <img id="lbImg" alt="">
+    <div class="lb-copy">
+      <button class="x" type="button" id="lbClose">Close</button>
+      <span class="idx" id="lbIndex" style="color:var(--gold-bright)">01</span>
+      <h3 id="lbTitle"></h3>
+      <p id="lbCopy"></p>
+      <div class="lb-nav">
+        <button type="button" id="lbPrev">Previous</button>
+        <button type="button" id="lbNext">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-panel">
+    <img id="modalImg" alt="">
+    <div class="modal-body">
+      <button class="x" type="button" id="modalClose">Close</button>
+      <span class="idx" id="modalIndex">01</span>
+      <h3 id="modalTitle"></h3>
+      <span class="price" id="modalPrice"></span>
+      <p class="detail" id="modalDetail"></p>
+      <div class="choose-state" id="chooseState">
+        <div class="sizes" role="radiogroup" aria-label="Size" id="sizes"></div>
+        <p class="size-hint" id="sizeHint"></p>
+        <p class="form-kicker">The house cuts true to size. Between sizes, take the larger — we alter.</p>
+        <div class="modal-actions">
+          <button class="btn" type="button" id="confirmReserve" disabled>Place on private list</button>
+        </div>
+      </div>
+      <div class="confirm-state" id="confirmState">
+        <h3 style="font-size:32px;margin-bottom:8px;">Held.</h3>
+        <p class="detail" id="confirmText"></p>
+        <div class="modal-actions">
+          <button class="btn" type="button" id="viewListFromModal">View list</button>
+          <button class="btn" type="button" id="continueEdit">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<aside class="list-panel" id="listPanel" role="dialog" aria-modal="true" aria-labelledby="listTitle" aria-hidden="true">
+  <div class="list-head">
+    <h3 id="listTitle">Private list</h3>
+    <button class="x" type="button" id="listClose">Close</button>
+  </div>
+  <div class="list-body" id="listBody"></div>
+  <div class="list-foot">
+    <div class="list-total"><span>Atelier total</span><span id="listTotal">$0</span></div>
+    <p>Shipping is arranged privately. Nothing is charged here.</p>
+    <a class="btn" id="listWa" href="https://wa.me/2348094412208" target="_blank" rel="noopener noreferrer">Enquire on WhatsApp</a>
+  </div>
+</aside>
+
+<div class="privacy" id="privacy" role="dialog" aria-modal="true" aria-labelledby="privTitle" hidden>
+  <div class="privacy-panel">
+    <button class="x" type="button" id="privClose">Close</button>
+    <h3 id="privTitle">Privacy</h3>
+    <p>Akwaafriks keeps private notes private. A message sent through this page is read by the atelier and is not added to a mailing list.</p>
+    <p>We do not sell personal information. A reservation stays on this device until you clear it, and is shared only if you choose WhatsApp.</p>
+    <button class="btn" type="button" id="privOk">Understood</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <style>
+    .preloader {
+      position: fixed; inset: 0; z-index: 400;
+      background: #0c090a; color: #f3eee6;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 1.1s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    .preloader.leave { transform: translateY(-100%); }
+    .pre-inner { text-align: center; }
+    .pre-brand {
+      margin: 0;
+      font-family: Inter, sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.46em;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .pre-line {
+      display: block; height: 1px; width: 0; margin: 18px auto 0;
+      background: #b08d5b;
+      animation: pregrow 1.15s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    @keyframes pregrow { to { width: 128px; } }
+  </style>
+  <div class="pre-inner">
+    <p class="pre-brand">Akwaafriks</p>
+    <span class="pre-line"></span>
+  </div>
+</div>
+<noscript><style>.preloader{display:none!important}.js .reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+<script>
+(function () {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const FOUNDER = 'https://www.designarena.ai/u/a45191f5-07f1-4d15-b01d-e6043a2389ec';
+  const PIECES = [
+    { id: 'column', name: 'The Column', price: 680, index: '01', img: 'https://images.unsplash.com/photo-1594633313593-bab3825d0caf?auto=format&fit=crop&w=1400&q=80', detail: 'Bias-cut ivory silk with a concealed side closure. Falls to the ankle. Lined for warm hours. Made to order in Lagos.' },
+    { id: 'bordeaux', name: 'Bordeaux Drape', price: 520, index: '02', img: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1400&q=80', detail: 'Wine silk, fluid enough for the shoulder or the waist. Evening weight. Finished by hand in the atelier.' },
+    { id: 'noir', name: 'Noir Atelier', price: 840, index: '03', img: 'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1400&q=80', detail: 'Black wool-silk tailoring. A softened shoulder, a clean line. Precision without severity. Made to order.' },
+    { id: 'gold', name: 'Gold Hour', price: 960, index: '04', img: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80', detail: 'Evening separates with a trace of metal in the weave. For the hour the room lowers its voice.' }
+  ];
+  const SIZES = ['XS', 'S', 'M', 'L', 'XL'];
+  const KEY = 'akwaafriks-private-list';
+  const looks = $$('.look-hit');
+
+  let privateList = [];
+  let menuOpen = false, listOpen = false, modalOpen = false, lbOpen = false, privOpen = false;
+  let lastFocus = null;
+  let selectedSize = null;
+  let activePiece = null;
+  let lbIndex = 0;
+  let expIndex = 0;
+  let userPaused = false;
+  let expVisible = false;
+  let toastTimer = null;
+  let started = false;
+
+  try {
+    const raw = JSON.parse(localStorage.getItem(KEY) || '[]');
+    privateList = Array.isArray(raw) ? raw.filter(it => it && PIECES.some(p => p.id === it.id) && SIZES.includes(it.size)) : [];
+  } catch (e) { privateList = []; }
+
+  const header = $('#header');
+  const menu = $('#menu');
+  const menuBtn = $('#menuBtn');
+  const overlay = $('#overlay');
+  const preloader = $('#preloader');
+
+  function lock(on) {
+    if (on) {
+      const sbw = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = sbw + 'px';
+      header.style.paddingRight = `calc(var(--pad) + ${sbw}px)`;
+    } else if (!menuOpen && !listOpen && !modalOpen && !lbOpen && !privOpen) {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+      header.style.paddingRight = '';
+    }
+  }
+  function anyOverlay() { return menuOpen || listOpen || modalOpen || lbOpen || privOpen; }
+
+  function toast(msg) {
+    const t = $('#toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+  }
+
+  function money(n) { return '$' + n.toLocaleString('en-US'); }
+
+  function waText(items) {
+    if (!items.length) return 'Hello Akwaafriks. I would like to arrange a private viewing.';
+    const lines = items.map(it => it.name + ' (Size ' + it.size + ')').join(', ');
+    return 'Hello Akwaafriks. I would like to reserve: ' + lines + '.';
+  }
+  function waHref(items) {
+    return 'https://wa.me/2348094412208?text=' + encodeURIComponent(waText(items));
+  }
+
+  function saveList() {
+    localStorage.setItem(KEY, JSON.stringify(privateList));
+    const count = $('#listCount');
+    count.textContent = String(privateList.length);
+    count.classList.toggle('has', privateList.length > 0);
+    $('#listWa').href = waHref(privateList);
+    const total = privateList.reduce((s, it) => s + (PIECES.find(p => p.id === it.id)?.price || 0), 0);
+    $('#listTotal').textContent = money(total);
+    $$('.piece').forEach(el => el.classList.toggle('is-held', privateList.some(it => it.id === el.dataset.id)));
+    renderList();
+  }
+
+  function renderList() {
+    const box = $('#listBody');
+    box.replaceChildren();
+    if (!privateList.length) {
+      const empty = document.createElement('div');
+      empty.className = 'list-empty';
+      empty.innerHTML = 'Nothing held. <a href="#pieces">The edit is waiting.</a>';
+      empty.querySelector('a').addEventListener('click', () => closeList());
+      box.appendChild(empty);
+      return;
+    }
+    privateList.forEach((item, i) => {
+      const piece = PIECES.find(p => p.id === item.id);
+      const row = document.createElement('div');
+      row.className = 'li-row';
+      const img = document.createElement('img');
+      img.src = piece ? piece.img : '';
+      img.alt = '';
+      const meta = document.createElement('div');
+      const strong = document.createElement('strong');
+      strong.textContent = item.name;
+      const span = document.createElement('span');
+      span.textContent = 'Size ' + item.size + ' · ' + money(piece ? piece.price : 0);
+      meta.append(strong, span);
+      const rm = document.createElement('button');
+      rm.type = 'button';
+      rm.className = 'li-remove';
+      rm.textContent = 'Remove';
+      rm.addEventListener('click', () => {
+        privateList.splice(i, 1);
+        saveList();
+        toast('Removed from the list');
+      });
+      row.append(img, meta, rm);
+      box.appendChild(row);
+    });
+  }
+
+  /* menu */
+  function setMenuImage(key, label) {
+    $$('.menu-visual img').forEach(img => img.classList.toggle('is-on', img.dataset.key === key));
+    if (label) $('#menuCaption').textContent = label;
+  }
+  function openMenu() {
+    lastFocus = document.activeElement;
+    menuOpen = true;
+    menu.classList.add('open');
+    menu.setAttribute('aria-hidden', 'false');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    menuBtn.textContent = 'Close';
+    document.body.classList.add('menu-open');
+    lock(true);
+    const current = document.querySelector('.menu-link.is-current');
+    if (current) setMenuImage(current.dataset.img, current.dataset.label);
+    setTimeout(() => { const f = $('.menu-link'); if (f) f.focus(); }, reduce ? 0 : 400);
+  }
+  function closeMenu() {
+    menuOpen = false;
+    menu.classList.remove('open');
+    menu.setAttribute('aria-hidden', 'true');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.textContent = 'Menu';
+    document.body.classList.remove('menu-open');
+    lock(false);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  menuBtn.addEventListener('click', () => menuOpen ? closeMenu() : openMenu());
+  $$('.menu-link').forEach(a => {
+    a.addEventListener('mouseenter', () => setMenuImage(a.dataset.img, a.dataset.label));
+    a.addEventListener('focus', () => setMenuImage(a.dataset.img, a.dataset.label));
+    a.addEventListener('click', () => closeMenu());
+  });
+
+  /* scroll */
+  $('#scrollCue').addEventListener('click', () => {
+    $('#founder').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+  });
+  $('#toTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }));
+
+  const sections = [
+    ['founder', 'The Founder'],
+    ['philosophy', 'More Than Clothing'],
+    ['collection', 'The Collection'],
+    ['experience', 'The Experience'],
+    ['pieces', 'Featured Pieces'],
+    ['statement', 'The House'],
+    ['contact', 'Contact']
+  ];
+  const headerSection = $('#headerSection');
+  function onScroll() {
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    $('#progress').style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+    let current = '';
+    sections.forEach(([id]) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight * 0.42) current = id;
+    });
+    const label = (sections.find(s => s[0] === current) || ['', ''])[1];
+    headerSection.textContent = y > 80 ? label : '';
+    $$('.menu-link').forEach(a => {
+      const id = (a.getAttribute('href') || '').slice(1);
+      a.classList.toggle('is-current', id === current);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* reveal */
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
+    $$('.reveal').forEach(el => io.observe(el));
+  } else {
+    $$('.reveal').forEach(el => el.classList.add('in'));
+  }
+
+  /* experience */
+  const slides = $$('.exp-slide');
+  const expBar = $('#expBar');
+  const frames = () => $$('.frame');
+  function expGo(i) {
+    expIndex = (i + slides.length) % slides.length;
+    slides.forEach((s, n) => s.classList.toggle('is-on', n === expIndex));
+    $('#expCount').textContent = String(expIndex + 1).padStart(2, '0') + ' / 05';
+    const cap = slides[expIndex].querySelector('strong');
+    $('#expLive').textContent = 'Study ' + (expIndex + 1) + ' of 5. ' + (cap ? cap.textContent : '');
+    frames().forEach(f => f.classList.toggle('is-active', Number(f.dataset.exp) === expIndex));
+    restartBar();
+  }
+  function restartBar() {
+    expBar.classList.remove('run', 'paused');
+    void expBar.offsetWidth;
+    if (!reduce && !userPaused && expVisible) expBar.classList.add('run');
+  }
+  function setPause(paused, silent) {
+    userPaused = paused;
+    $('#expPause').textContent = paused ? 'Play' : 'Pause';
+    $('#expPause').setAttribute('aria-pressed', paused ? 'true' : 'false');
+    expBar.classList.toggle('paused', paused || !expVisible);
+    if (!silent && paused) toast('Movement paused');
+  }
+  $('#expPrev').addEventListener('click', () => expGo(expIndex - 1));
+  $('#expNext').addEventListener('click', () => expGo(expIndex + 1));
+  $('#expPause').addEventListener('click', () => setPause(!userPaused));
+  expBar.addEventListener('animationend', (e) => {
+    if (e.target !== expBar) return;
+    if (!userPaused && expVisible && !reduce) expGo(expIndex + 1);
+  });
+  $('.film').addEventListener('click', (e) => {
+    const btn = e.target.closest('.frame');
+    if (!btn) return;
+    expGo(Number(btn.dataset.exp));
+  });
+  const stage = $('#expStage');
+  let touchX = 0;
+  stage.addEventListener('touchstart', (e) => { touchX = e.changedTouches[0].clientX; }, { passive: true });
+  stage.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 42) expGo(expIndex + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+  if ('IntersectionObserver' in window) {
+    const expIO = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        expVisible = en.isIntersecting;
+        if (expVisible && !userPaused && !reduce) {
+          if (!expBar.classList.contains('run')) restartBar();
+          else expBar.classList.remove('paused');
+        } else {
+          expBar.classList.add('paused');
+        }
+      });
+    }, { threshold: 0.35 });
+    expIO.observe(stage);
+  }
+  const filmTrack = $('#filmTrack');
+  filmTrack.insertAdjacentHTML('beforeend', filmTrack.innerHTML);
+
+  /* lightbox */
+  function openLb(i) {
+    lastFocus = document.activeElement;
+    lbIndex = i;
+    renderLb();
+    lbOpen = true;
+    const lb = $('#lightbox');
+    lb.hidden = false;
+    requestAnimationFrame(() => lb.classList.add('open'));
+    overlay.hidden = false;
+    requestAnimationFrame(() => overlay.classList.add('show'));
+    lock(true);
+    $('#lbClose').focus();
+  }
+  function renderLb() {
+    const btn = looks[lbIndex];
+    const fig = btn.closest('.look');
+    const img = fig.querySelector('img');
+    $('#lbImg').src = img.src;
+    $('#lbImg').alt = img.alt;
+    $('#lbTitle').textContent = btn.dataset.title || '';
+    $('#lbCopy').textContent = btn.dataset.copy || '';
+    $('#lbIndex').textContent = String(lbIndex + 1).padStart(2, '0') + ' / 0' + looks.length;
+  }
+  function closeLb() {
+    lbOpen = false;
+    $('#lightbox').classList.remove('open');
+    setTimeout(() => { if (!lbOpen) $('#lightbox').hidden = true; }, 450);
+    if (!modalOpen && !privOpen && !listOpen) {
+      overlay.classList.remove('show');
+      setTimeout(() => { if (!anyOverlay()) overlay.hidden = true; }, 450);
+    }
+    lock(false);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  function lbStep(d) {
+    lbIndex = (lbIndex + d + looks.length) % looks.length;
+    renderLb();
+  }
+  looks.forEach((btn, i) => btn.addEventListener('click', () => openLb(i)));
+  $('#lbClose').addEventListener('click', closeLb);
+  $('#lbPrev').addEventListener('click', () => lbStep(-1));
+  $('#lbNext').addEventListener('click', () => lbStep(1));
+
+  /* modal */
+  const sizesEl = $('#sizes');
+  SIZES.forEach(sz => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.role = 'radio';
+    b.dataset.size = sz;
+    b.setAttribute('aria-checked', 'false');
+    b.textContent = sz;
+    b.addEventListener('click', () => selectSize(sz));
+    sizesEl.appendChild(b);
+  });
+  function selectSize(sz) {
+    selectedSize = sz;
+    $$('#sizes button').forEach(b => b.setAttribute('aria-checked', b.dataset.size === sz ? 'true' : 'false'));
+    $('#confirmReserve').disabled = !sz;
+    $('#sizeHint').textContent = '';
+  }
+  function openPiece(id) {
+    const piece = PIECES.find(p => p.id === id);
+    if (!piece) return;
+    activePiece = piece;
+    selectedSize = null;
+    lastFocus = document.activeElement;
+    $('#modalImg').src = piece.img;
+    $('#modalImg').alt = piece.name;
+    $('#modalIndex').textContent = piece.index;
+    $('#modalTitle').textContent = piece.name;
+    $('#modalPrice').innerHTML = money(piece.price) + ' <small>USD</small>';
+    $('#modalDetail').textContent = piece.detail;
+    $$('#sizes button').forEach(b => b.setAttribute('aria-checked', 'false'));
+    $('#confirmReserve').disabled = true;
+    $('#sizeHint').textContent = '';
+    $('#chooseState').classList.remove('hide');
+    $('#confirmState').classList.remove('show');
+    modalOpen = true;
+    const modal = $('#modal');
+    modal.hidden = false;
+    requestAnimationFrame(() => modal.classList.add('open'));
+    overlay.hidden = false;
+    requestAnimationFrame(() => overlay.classList.add('show'));
+    lock(true);
+    $('#modalClose').focus();
+  }
+  function closeModal() {
+    modalOpen = false;
+    $('#modal').classList.remove('open');
+    setTimeout(() => { if (!modalOpen) $('#modal').hidden = true; }, 450);
+    if (!lbOpen && !privOpen && !listOpen) {
+      overlay.classList.remove('show');
+      setTimeout(() => { if (!anyOverlay()) overlay.hidden = true; }, 450);
+    }
+    lock(false);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  $$('[data-open]').forEach(b => b.addEventListener('click', () => openPiece(b.dataset.open)));
+  $('#modalClose').addEventListener('click', closeModal);
+  $('#confirmReserve').addEventListener('click', () => {
+    if (!selectedSize || !activePiece) {
+      $('#sizeHint').textContent = 'Select a size.';
+      return;
+    }
+    const exists = privateList.some(it => it.id === activePiece.id && it.size === selectedSize);
+    if (exists) {
+      toast('Already held in this size');
+      return;
+    }
+    privateList.push({ id: activePiece.id, name: activePiece.name, size: selectedSize });
+    saveList();
+    $('#confirmText').textContent = activePiece.name + ', size ' + selectedSize + ', is on your private list.';
+    $('#chooseState').classList.add('hide');
+    $('#confirmState').classList.add('show');
+    toast('Placed on your private list');
+  });
+  $('#continueEdit').addEventListener('click', closeModal);
+  $('#viewListFromModal').addEventListener('click', () => { closeModal(); setTimeout(openList, 80); });
+
+  /* list */
+  function openList() {
+    if (menuOpen) closeMenu();
+    lastFocus = document.activeElement;
+    listOpen = true;
+    $('#listPanel').classList.add('open');
+    $('#listPanel').setAttribute('aria-hidden', 'false');
+    overlay.hidden = false;
+    requestAnimationFrame(() => overlay.classList.add('show'));
+    lock(true);
+    $('#listClose').focus();
+  }
+  function closeList() {
+    listOpen = false;
+    $('#listPanel').classList.remove('open');
+    $('#listPanel').setAttribute('aria-hidden', 'true');
+    if (!modalOpen && !lbOpen && !privOpen) {
+      overlay.classList.remove('show');
+      setTimeout(() => { if (!anyOverlay()) overlay.hidden = true; }, 450);
+    }
+    lock(false);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  $('#openList').addEventListener('click', () => listOpen ? closeList() : openList());
+  $('#listClose').addEventListener('click', closeList);
+
+  /* privacy */
+  function openPrivacy() {
+    lastFocus = document.activeElement;
+    privOpen = true;
+    const p = $('#privacy');
+    p.hidden = false;
+    requestAnimationFrame(() => p.classList.add('open'));
+    overlay.hidden = false;
+    requestAnimationFrame(() => overlay.classList.add('show'));
+    lock(true);
+    $('#privClose').focus();
+  }
+  function closePrivacy() {
+    privOpen = false;
+    $('#privacy').classList.remove('open');
+    setTimeout(() => { if (!privOpen) $('#privacy').hidden = true; }, 400);
+    if (!anyOverlay()) {
+      overlay.classList.remove('show');
+      setTimeout(() => { if (!anyOverlay()) overlay.hidden = true; }, 450);
+    }
+    lock(false);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  $('#openPrivacy').addEventListener('click', openPrivacy);
+  $('#privClose').addEventListener('click', closePrivacy);
+  $('#privOk').addEventListener('click', closePrivacy);
+
+  overlay.addEventListener('click', () => {
+    if (lbOpen) closeLb();
+    else if (modalOpen) closeModal();
+    else if (privOpen) closePrivacy();
+    else if (listOpen) closeList();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (lbOpen) closeLb();
+      else if (modalOpen) closeModal();
+      else if (privOpen) closePrivacy();
+      else if (listOpen) closeList();
+      else if (menuOpen) closeMenu();
+      return;
+    }
+    if (e.key === 'Tab') {
+      let nodes = [];
+      if (lbOpen) nodes = $$('#lightbox button, #lightbox a');
+      else if (modalOpen) nodes = $$('#modal button, #modal a, #modal input').filter(n => !n.disabled && n.offsetParent !== null);
+      else if (privOpen) nodes = $$('#privacy button');
+      else if (listOpen) nodes = $$('#listPanel button, #listPanel a');
+      else if (menuOpen) nodes = $$('.header a, .header button, .menu a, .menu button');
+      nodes = nodes.filter(n => !n.hasAttribute('disabled'));
+      if (nodes.length) {
+        const first = nodes[0], last = nodes[nodes.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+      return;
+    }
+    const typing = document.activeElement && ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName);
+    if (typing) return;
+    if (lbOpen) {
+      if (e.key === 'ArrowRight') lbStep(1);
+      if (e.key === 'ArrowLeft') lbStep(-1);
+      return;
+    }
+    if ((expVisible || document.activeElement === stage) && !anyOverlay()) {
+      if (e.key === 'ArrowRight') expGo(expIndex + 1);
+      if (e.key === 'ArrowLeft') expGo(expIndex - 1);
+    }
+  });
+
+  /* form */
+  const form = $('#noteForm');
+  function setErr(name, msg) {
+    const field = form.querySelector('[data-field="' + name + '"]');
+    const err = $('#err-' + name);
+    field.classList.toggle('error', Boolean(msg));
+    err.textContent = msg || '';
+  }
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function validate() {
+    let ok = true;
+    const name = $('#name').value.trim();
+    const email = $('#email').value.trim();
+    const message = $('#message').value.trim();
+    if (name.length < 2) { setErr('name', 'A name, please.'); ok = false; } else setErr('name', '');
+    if (!validEmail(email)) { setErr('email', 'A valid email is needed.'); ok = false; } else setErr('email', '');
+    if (message.length < 8) { setErr('message', 'A few more words.'); ok = false; } else setErr('message', '');
+    return ok;
+  }
+  ['name', 'email', 'message'].forEach(id => {
+    $('#' + id).addEventListener('blur', validate);
+  });
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+    const btn = $('#sendNote');
+    btn.disabled = true;
+    btn.textContent = 'Sending';
+    const name = $('#name').value.trim();
+    setTimeout(() => {
+      form.hidden = true;
+      $('#formSuccess').classList.add('show');
+      $('#successWa').href = 'https://wa.me/2348094412208?text=' + encodeURIComponent('Hello Akwaafriks. This is ' + name + '. I just sent a note to the atelier.');
+      btn.disabled = false;
+      btn.textContent = 'Send the note';
+    }, 700);
+  });
+  $('#writeAnother').addEventListener('click', () => {
+    form.reset();
+    ['name', 'email', 'message'].forEach(n => setErr(n, ''));
+    form.hidden = false;
+    $('#formSuccess').classList.remove('show');
+    $('#name').focus();
+  });
+
+  /* images */
+  $$('img').forEach(img => {
+    img.addEventListener('error', () => {
+      img.style.opacity = '0';
+    });
+  });
+
+  $('#year').textContent = String(new Date().getFullYear());
+  saveList();
+
+  function revealSite() {
+    if (started) return;
+    started = true;
+    document.body.classList.add('ready');
+    if (reduce) {
+      preloader.remove();
+      return;
+    }
+    preloader.classList.add('leave');
+    const done = () => { if (preloader.parentNode) preloader.remove(); };
+    preloader.addEventListener('transitionend', done, { once: true });
+    setTimeout(done, 1600);
+  }
+  if (reduce) {
+    revealSite();
+  } else {
+    const heroImg = $('.hero-media img');
+    let armed = false;
+    const go = (delay) => {
+      if (armed) return;
+      armed = true;
+      setTimeout(revealSite, delay);
+    };
+    if (heroImg.complete && heroImg.naturalWidth) go(700);
+    else {
+      heroImg.addEventListener('load', () => go(500));
+      heroImg.addEventListener('error', () => go(300));
+      setTimeout(() => go(0), 2200);
+    }
+    preloader.addEventListener('click', () => go(0));
+  }
+})();
+</script>
+</body>
+</html>
